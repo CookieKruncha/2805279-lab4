@@ -1,5 +1,12 @@
 .spinner {
     /* Your styling */
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ccc;       /* Light gray background ring */
+    border-top: 4px solid #3498db; /* Colored spinning part */
+    border-radius: 50%;           /* Makes it circular */
+    animation: spin 1s linear infinite;
+
     animation: spin 1s linear infinite; /* Required */
 }
 
@@ -17,6 +24,7 @@
     /*display: grid; or*/
     display: flex;
     /* Additional layout properties */
+    background-color: green;
 }
 
 .error {
@@ -26,4 +34,15 @@
 
 .hidden {
     display: none;
+}
+
+.border-country {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.border-country img {
+    display: block;
+    margin-bottom: 5px;
 }
